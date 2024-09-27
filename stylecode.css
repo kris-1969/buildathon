@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: 'Brandbe', sans-serif; /* Update the font-family to Bandbe */
-    background-image: url('background.jpg'); /* Set the background image */
+    background-color: aliceblue;
+    background-image: ;
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating the image */
@@ -56,9 +57,18 @@ nav a:hover {
 h1 {
     font-weight: 700;
     margin: 40px 0;
+    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     color: #4CAF50;
     font-size: 4rem; /* Adjust font size as needed */
+}
+
+.content{
+    font-weight: 700;
+    margin: 40px 0;
+    text-align: center;
+    color: #4CAF50;
+    font-size: 4rem;
 }
 
 main {
