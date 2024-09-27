@@ -1,17 +1,42 @@
 [
     {
-        "name": "Location 1",
-        "lat": 51.505,
-        "lng": -0.09
+        "name": "Koodalmanikyam Temple",
+        "lat": 10.3421,
+        "lng": 76.2060
     },
     {
-        "name": "Location 2",
-        "lat": 51.515,
-        "lng": -0.1
+        "name": "St. Thomas Cathedral",
+        "lat": 10.3453,
+        "lng": 76.2047
     },
     {
-        "name": "Location 3",
-        "lat": 51.525,
-        "lng": -0.08
+        "name": "Irinjalakuda Railway Station",
+        "lat": 10.3569,
+        "lng": 76.2173
+    },
+    {
+        "name": "St. Joseph's College",
+        "lat": 10.3374,
+        "lng": 76.2082
+    },
+    {
+        "name": "Nadavaramba Sree Krishna Temple",
+        "lat": 10.3405,
+        "lng": 76.2172
+    },
+    {
+        "name": "Sacred Heart School",
+        "lat": 10.3456,
+        "lng": 76.2108
+    },
+    {
+        "name": "Tana Bus Stand",
+        "lat": 10.3431,
+        "lng": 76.2100
+    },
+    {
+        "name": "Pazhayanadakkavu Bridge",
+        "lat": 10.3416,
+        "lng": 76.1999
     }
 ]
