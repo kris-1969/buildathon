@@ -22,33 +22,37 @@
     </nav>
         <div class="login-icon"></div>
     </header>
-    <main>
-        <main id="wrapper">
-            <div class="container">
-              <form action="#" id="appoint-form" method="POST">
-                <h1 id="form-head">Book Your Appointment</h1>
-                <label for="select city" id="city" class="format">SELECT CITY </label>
-                <select id="dropdown">
-                  <option value="select your city" disabled selected>Select Your City </option>
-                  <option value="balasore">Balasore </option>
-                  <option value="bhadrak">Bhadrak </option>
-                  <option value="baripada">Baripada </option>
-                </select>
-                <label for="dateandtime" id="date-time" class="format">SELECT DATE AND TIME </label>
-                <input type="date" id="date" name="date" class="dtt"  required>
-                <input type="time" id="time" name="utime" min="8:00" max="20:00" value="8:00" class="dtt" required>
-                <small id="note">(Note:Visiting hours are 8am to 8pm)</small>
-                <label for="personal details" id="p-details" class="format">PERSONAL DETAILS</label>
-                <input type="text" id="name" class="person-detail" placeholder="Full name*" name="uname" maxlength="20" required>
-                <input type="tel" id="mobile" class="person-detail" name="ucontact" placeholder="Mobile number*" maxlength="10" required>
-                <input type="email" placeholder="Email(optional)" id="email" class="person-detail" name="uemail" required>
-                <textarea id="message" name="umessage" rows="5" cols="3" placeholder="Type text message" class="person-detail"></textarea>
-                <button type="submit" id="submit" value="Submit" onclick="">Submit </button>
-          
-              </form>
-            </div>
-          </main>
-    </main>
+    <div class="container">
+      <h1>Book Your Appointment</h1>
+      <form id="booking-form">
+          <label for="date">Select Booking Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="hospital">Preferred Hospital:</label>
+          <select id="hospital" name="hospital" required>
+              <option value="">Select a hospital</option>
+              <option value="hospital1">Hospital 1</option>
+              <option value="hospital2">Hospital 2</option>
+              <option value="hospital3">Hospital 3</option>
+          </select>
+
+          <label for="doctor">Preferred Doctor:</label>
+          <select id="doctor" name="doctor" required>
+              <option value="">Select a doctor</option>
+              <option value="doctor1">Doctor 1</option>
+              <option value="doctor2">Doctor 2</option>
+              <option value="doctor3">Doctor 3</option>
+          </select>
+
+          <button type="submit">Book Appointment</button>
+      </form>
+
+      <div id="confirmation" class="hidden">
+          <h2>Appointment Confirmed!</h2>
+          <p id="confirmation-message"></p>
+      </div>
+  </div>
+
     <footer>
         <p>Company Name | Address | Phone Number | Email</p>
     </footer>
