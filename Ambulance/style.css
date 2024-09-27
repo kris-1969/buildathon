@@ -1,0 +1,9 @@
+*{
+    background-color: #ADD18D;
+}
+.click{
+    z-index:-1;
+    opacity: 50;;
+    position: relative;
+    top: 350px;
+}
