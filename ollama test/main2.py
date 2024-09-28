@@ -3,6 +3,11 @@ from pydantic import BaseModel
 from langchain_ollama import OllamaLLM
 
 app = FastAPI()
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 # Initialize your LangChain Ollama model
 model = OllamaLLM(model_name="Meditron")

@@ -1,19 +1,22 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url('background.jpg'); /* Set the background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    height: 100vh; /* Set height to full viewport height */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background for header */
+    background-color: rgba(76, 175, 80, 0.8);
     padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100; /* Ensure the header stays on top */
 }
 
 nav {
@@ -52,39 +55,34 @@ h1 {
     margin: 40px 0;
     text-align: center;
     color: #4CAF50;
-    font-size: 4rem; /* Adjust font size as needed */
+    font-size: 4rem;
 }
 
 main {
-    min-height: 100vh; /* Ensure main content occupies at least full viewport height */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Center the content vertically */
+    flex-direction: column; 
+    justify-content: center; 
+    padding-top: 80px; /* Space for fixed header */
 }
 
 footer {
-    background-color: black; /* Black footer background */
-    color: white; /* White text color */
-    text-align: center; /* Center text */
-    padding: 20px; /* Padding for footer */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
+
 .contact-header {
-    text-align: center; /* Center the title */
-    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
-.contact-image {
-    height: 300px; /* Set a height for the image section */
-    background-image: url('path-to-your-image.jpg'); /* Replace with the actual image path */
-    background-size: cover; /* Ensure the image covers the area */
-    background-position: center; /* Center the image */
-    margin: 20px 0; /* Space above and below the image */
+.contact-us-box {
+    top: 10px;
+    bottom: 20px;
 }
 
-.about-us,
-.contact-info {
-    margin: 20px; /* Add some margin for better spacing */
-}
 .container {
     max-width: 500px;
     margin: auto;
@@ -94,11 +92,21 @@ footer {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+/* Animation Styles */
+.animate {
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(20px); /* Start lower */
+    animation: fadeInUp 1s forwards; /* Fade in and move up */
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Form Styles */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -147,11 +155,7 @@ button:hover {
 .contact-info a:hover {
     text-decoration: underline;
 }
-.contact-us-box{
-    top:10px;
-    bottom: 20px;
-}
 
-.contact-us-text{
+.contact-us-text {
     color: rgba(76, 175, 80, 0.8);
 }
